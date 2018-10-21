@@ -103,7 +103,6 @@ Public parameters/ actions in use (when using embedded you may need this info):
  - `fm_usr` - Login user (if auth enabled)
  - `fm_pwd` - Login pass (if auth enabled)
 
-
 ## Alternatives
 
 - [PHP File Manager](https://github.com/alexantr/filemanager) origin
