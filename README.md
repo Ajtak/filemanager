@@ -3,7 +3,7 @@
 A good solution for managing files and folders for developers who can't access 
 their site over SSH or FTP or who need "www-data" permission (*nix).
 
-![PHP File Manager](https://raw.github.com/alexantr/filemanager/master/phpfm.png)
+![PHP File Manager](https://raw.github.com/flobee/filemanager/master/assets/phpfm.png)
 
 ## Danger!
 
