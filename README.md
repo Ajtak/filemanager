@@ -5,12 +5,18 @@ their site over SSH or FTP or who need "www-data" permission (*nix).
 
 ![PHP File Manager](https://raw.github.com/alexantr/filemanager/master/phpfm.png)
 
+## Danger!
+
 **WARNING! Do not use this script as a regular file manager in public area.
 After all actions you must delete this script from the server.**
 
+And: Skip error reporting! This tools does a good job but take care and don't 
+look behind the scene :) Test it first in a save enviroment (eg.: 
+`define('FM_ROOT_PATH', '/tmp'); // playground first!`
+
 ## Requirements
 
-- PHP 5.2 or higher.
+- PHP 5.2 / PHP 7++
 - [Zip extension](http://php.net/manual/en/book.zip.php) for zip and unzip actions.
 - Fileinfo, iconv and mbstring extensions are strongly recommended.
 
@@ -33,7 +39,13 @@ To enable or disable authentication set `$use_auth` to `true` or `false`.
 
 ## Embedding
 
-You can include file manager in another script. Just define `FM_EMBED` and other necessary constants. Example:
+You can include file manager in another script. Just define `FM_EMBED` and 
+other necessary constants. 
+
+The authentication does not work in emedded mode and it is expacted you use 
+your own authentication/ authorisation mechanism!
+
+Example:
 
 ```php
 class FileManagerController
@@ -72,39 +84,29 @@ Public parameters/ actions in use (when using embedded you may need this info):
  - `copy` - Copy a file or directory src
  - `move` - Flag to move and not to copy a file or directory
  - `finish` - Flag to enable file/directory copy/movements
-
  - `ren` - Rename selected file or directory
  - `to` - Rename target
-
  - `dl` - Download selected file
-
  - `del` - delete a file/ directory
-
  - `group` - Mass deletion of selected items
  - `delete`
-
  - `group` - Pack selected items
  - `zip`
-
  - `unzip` - Unpack selected item
  - `tofolder` - Upack to folder of zip's filename
-
  - `chmod` - Change mode (permissions) of selected item
-
  - `view` - Show selected item (list zip contents, shows images/media or mime:text files)
-
  - `logout` - logout (if enabled)
  - `img` - Show a selected image
-
  - `upl` - Flag for uploads
  - `upload` - Upload _FILES
-
  - `fm_usr` - Login user (if auth enabled)
  - `fm_pwd` - Login pass (if auth enabled)
 
 
 ## Alternatives
 
+- [PHP File Manager](https://github.com/alexantr/filemanager) origin
 - [Tiny PHP File Manager](https://github.com/prasathmani/tinyfilemanager) with search and file editor
 - [simple php filemanager](https://github.com/jcampbell1/simple-file-manager)
 
