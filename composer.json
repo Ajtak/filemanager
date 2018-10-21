@@ -1,0 +1,26 @@
+{
+    "name": "flobee/filemanager",
+    "description": "PHP Filemanager for developers for managing files and folders who can't access their site over SSH or FTP or who need "www-data" permission (*nix)",
+    "keywords": [
+        "PHP",
+        "www-data",
+        "Upload",
+        "Download",
+        "File manager"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Florian Blasel",
+            "email": "flobee.code@gmail.com",
+            "role": "Developer"
+        }, {
+            "name": "Alex Yashkin",
+            "role": "origin"
+        }
+    ],
+    "require": {
+        "ext-zip": "*",
+        "php": "7.*"
+    }
+}
