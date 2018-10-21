@@ -1,6 +1,6 @@
 {
     "name": "flobee/filemanager",
-    "description": "PHP Filemanager for developers for managing files and folders who can't access their site over SSH or FTP or who need "www-data" permission (*nix)",
+    "description": "PHP Filemanager for developers for managing files and folders who can't access their site over SSH or FTP or who need `www-data` permission (*nix)",
     "keywords": [
         "PHP",
         "www-data",
